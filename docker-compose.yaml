@@ -14,6 +14,14 @@ services:
     - redis
     - mongodb
 
+  cart:
+    build: ./cart
+    image: balu676/cart:1.0.0
+    container_name: cart
+    depends_on:
+    - redis
+    - catalogue
+
   frontend:
     build: ./frontend
     image: balu676/frontend:1.0.0

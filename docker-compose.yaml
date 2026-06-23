@@ -39,6 +39,8 @@ services:
     depends_on:
     - catalogue
     - user
+    - shipping
+    - cart
   
   mongodb:
     build: ./mongodb # it moves to mongodb directory

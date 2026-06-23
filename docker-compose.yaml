@@ -45,8 +45,6 @@ services:
     build: ./mysql
     image: balu676/mysql:1.0.0
     container_name: mysql
-    volumes:
-    - mysql:/var/lib/mysq
    
 networks:
   default:
